@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-green)
+![Data Science](https://img.shields.io/badge/Data-Preprocessing-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 # 🧵 DataWeave Studio
 
 Transform raw data into clean, structured insights through an interactive GUI pipeline.
