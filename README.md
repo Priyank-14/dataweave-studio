@@ -1,6 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-green)
-![Data Science](https://img.shields.io/badge/Data-Preprocessing-orange)
+![Domain](https://img.shields.io/badge/Domain-Data%20Preprocessing-orange)
+![Type](https://img.shields.io/badge/Application-Desktop%20GUI-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
@@ -8,21 +9,25 @@
 
 Transform raw data into clean, structured insights through an interactive GUI pipeline.
 
-DataWeave Studio is a modern **GUI-based data preprocessing application** built with Python to simplify data cleaning, transformation, analysis, and visualization — all without writing complex code.
+---
+
+## 📌 Overview
+
+Data preprocessing is one of the most time-consuming and critical steps in any data science workflow.
+
+DataWeave Studio is a **desktop GUI-based data preprocessing application** built using Python that simplifies cleaning, transformation, dimensionality reduction, and visualization of datasets — all without requiring users to write complex code.
 
 ---
 
-## 🚀 Overview
+## 🎯 Problem Statement
 
-DataWeave Studio provides an end-to-end pipeline for working with datasets:
+Real-world datasets are often:
 
-* Clean messy real-world data
-* Transform and normalize values
-* Reduce dimensionality (PCA & LDA)
-* Visualize patterns and statistics
-* Export processed datasets
+* Incomplete (missing values)
+* Inconsistent (mixed formats)
+* Noisy (outliers, duplicates)
 
-All operations are performed through a **simple and interactive desktop interface**.
+👉 This project aims to provide an **intuitive interface** that allows users to process and prepare data efficiently for analysis and machine learning.
 
 ---
 
@@ -55,28 +60,28 @@ All operations are performed through a **simple and interactive desktop interfac
 ### 🧹 Data Cleaning Pipeline
 
 * Detects and replaces null-like values (`N/A`, `null`, `-`, etc.)
-* Removes empty rows and duplicate entries
-* Converts numeric-like strings into proper numeric format
+* Removes duplicates and empty rows
+* Converts numeric-like strings into numeric format
 * Handles missing values:
 
-  * Median (numerical columns)
-  * Mode / `"Unknown"` (categorical columns)
-* Removes outliers using IQR (Interquartile Range)
+  * Median (numerical)
+  * Mode / `"Unknown"` (categorical)
+* Removes outliers using IQR
 
 ---
 
 ### 📐 Data Transformation
 
 * Min-Max Normalization
-* Scales numeric data to range **[0, 1]**
+* Scales data to range **[0, 1]**
 * Handles constant columns safely
 
 ---
 
 ### 📉 Data Reduction
 
-* **PCA (Principal Component Analysis)**
-* **LDA (Linear Discriminant Analysis)**
+* PCA (Principal Component Analysis)
+* LDA (Linear Discriminant Analysis)
 
 ---
 
@@ -87,40 +92,36 @@ All operations are performed through a **simple and interactive desktop interfac
   * Mean, Median, Mode, Standard Deviation
 * Graphs:
 
-  * Bar Charts
-  * Box Plots
-  * Histogram
-* Embedded visualization directly inside GUI
+  * Bar charts
+  * Box plots
+  * Histograms
+* Embedded plots inside GUI
 
 ---
 
 ### 📂 File Handling
 
 * Upload CSV datasets
-* Preview:
-
-  * Original data
-  * Cleaned data
-  * Normalized data
+* Preview original & processed data
 * Export cleaned dataset
 
 ---
 
 ## 🔄 Workflow
 
-Upload Data → Clean Data → Normalize → Reduce → Visualize → Export
+Upload Data → Clean → Normalize → Reduce → Visualize → Export
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category         | Tools         |
-| ---------------- | ------------- |
-| Language         | Python        |
-| GUI              | Tkinter       |
-| Data Processing  | Pandas, NumPy |
-| Machine Learning | Scikit-learn  |
-| Visualization    | Matplotlib    |
+| Category        | Tools         |
+| --------------- | ------------- |
+| Language        | Python        |
+| GUI             | Tkinter       |
+| Data Processing | Pandas, NumPy |
+| ML              | Scikit-learn  |
+| Visualization   | Matplotlib    |
 
 ---
 
@@ -142,13 +143,37 @@ python app.py
 
 ---
 
+## 🔍 Key Insight
+
+This project highlights how **data preprocessing can be transformed from a manual, code-heavy task into an intuitive visual workflow**, improving accessibility for beginners and speeding up data preparation.
+
+---
+
+## 📌 Key Learnings
+
+* Building GUI applications using Tkinter
+* Designing modular data processing pipelines
+* Applying preprocessing techniques used in real ML workflows
+* Integrating visualization within desktop applications
+
+---
+
+## 🔮 Future Improvements
+
+* Drag-and-drop workflow interface
+* Support for Excel and JSON formats
+* Real-time visualization updates
+* Integration with ML model training
+
+---
+
 ## 👨‍💻 Author
 
-Priyank Sinha
+**Priyank Sinha**
 B.Tech CSE | AI/ML Enthusiast
 
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a star ⭐
+If you found this useful, consider giving it a ⭐
